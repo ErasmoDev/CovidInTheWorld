@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources><string name="app_name">CovidInTheWorld</string>
+    <string name="home">Home</string>
+    <string name="home_message">Esses dados são alterados rapidamente e podem não refletir alguns casos que ainda estão sendo relatados. Você pode atualizar os registros periodicamente para refletir as alterações.</string>
+    <string name="total_cases">Total Casos</string>
+    <string name="new_cases">Novos Casos</string>
+    <string name="total_deaths">Total Mortes</string>
+    <string name="new_deaths">Novas Mortes</string>
+    <string name="total_recovered">Total Recuperados</string>
+    <string name="new_recovered">Novos Recuperados</string>
+    <string name="search">Search</string>
+    <string name="today_cases">Casos - Hoje</string>
+    <string name="deaths">Mortes</string>
+    <string name="today_deaths">Mortes - Hoje</string>
+    <string name="recovered">Recuperados</string>
+    <string name="today_recovered">Recuperados - Hoje</string>
+    <string name="cases">Casos</string>
+    <string name="stats">Países</string>
+    <string name="ascending">Crescente</string>
+    <string name="descending">Decrescente</string>
+    <string name="some_error">Ocorreu um erro, tente mais tarde.</string>
+</resources>

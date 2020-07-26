@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorGray1"
+    android:orientation="vertical"
+    tools:context=".StatsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchRl"
+        android:gravity="center_vertical">
+
+        <ProgressBar
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/progressBar"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchEt"
+            android:layout_margin="5dp"
+            android:layout_toStartOf="@+id/sortBtn"
+            android:layout_toEndOf="@+id/progressBar"
+            android:drawableStart="@drawable/ic_search_gray"
+            android:hint="@string/search"
+            android:padding="8dp"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorGray2"
+            android:background="@drawable/shape_rect"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sortBtn"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_sort_gray"
+            android:tint="@color/colorGray3"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/statsRv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/row_stat"/>
+
+</LinearLayout>
